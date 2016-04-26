@@ -20,6 +20,51 @@ it, simply add the following line to your Podfile:
 pod "URLTabNavigationController"
 ```
 
+## Quick Start
+
+### TabBar Navigation
+
+````
+#import "URLTabNavigationController.h"
+
+//! singleton instance
+URLTabNavigationController* tabNavigation = [URLTabNavigationController defaultTabNavigationController];
+
+//! tab navigate url to class name
+[tabNavigation navigate:@"/red" title:@"red" image:nil selectedImage:nil className:@"RedViewController"];
+[tabNavigation navigate:@"/blue" title:@"blue" image:nil selectedImage:nil className:@"BlueViewController"];
+[tabNavigation navigate:@"/yellow" title:@"yellow" image:nil selectedImage:nil className:@"YellowViewController"];
+
+//! tab bar controller initialization
+[tabNavigation initialization];
+````
+
+### URL Router
+
+````
+#import "URLRouter.h"
+
+//! singleton instance
+URLRouter* router = [URLRouter defaultRouter];
+
+//! router map path to class name
+[router map:@"/home/:user" withControllerClassName: @"HomeViewController"];
+[router map:@"/message" withControllerClassName: @"MessageViewController"];
+[router map:@"/mine" withControllerClassName:@"MineViewController"];
+
+//! router map path pattern example
+[router map:@"/:name/:age/:hobby" withCompletion: ^(NSURL* url){
+    NSLog(@"block exeucte (name: %@) (age: %@) (hobby: %@)", url.queryDictionary[@"name"], url.queryDictionary[@"age"], url.queryDictionary[@"hobby"]);
+}];
+
+//! router map path pattern for View Controller
+UIViewController* vc = [router viewControllerForPath:@"/home/liujianping"];
+
+//! router map path pattern for excute URL
+[router executeURL:[[NSURL alloc] initWithString: @"/liujianping/36/movie"]];
+
+````
+
 ## Author
 
 liujianping, liujianping.itech@qq.com
