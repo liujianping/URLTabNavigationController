@@ -18,7 +18,7 @@
 @property (weak, nonatomic)   UINavigationController* navigationController;
 @end
 
-@interface URLTabNavigationController : UITabBarController
+@interface URLTabNavigationController : UITabBarController<UITabBarDelegate>
 @property (strong, nonatomic) NSMutableArray* navigations;
 @property (weak, nonatomic) URLRouter* router;
 @property (readonly, strong, nonatomic) UIButton* centerButton;

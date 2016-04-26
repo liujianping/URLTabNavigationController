@@ -12,10 +12,6 @@
 @implementation NavigationModel
 @end
 
-@interface URLTabNavigationController ()
-
-@end
-
 @implementation URLTabNavigationController
 
 + (instancetype) defaultTabNavigationController{
