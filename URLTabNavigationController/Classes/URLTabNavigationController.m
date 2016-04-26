@@ -35,8 +35,6 @@
         _navigations = [[NSMutableArray alloc] init];
         _router = [URLRouter defaultRouter];
     }
-    self.delegate = self;
-    
     return self;
 }
 
@@ -134,10 +132,4 @@
     [self.view addSubview:button];
 }
 
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    NSLog(@"tabBarController didSelectViewController => %@", NSStringFromClass([viewController class]));
-    if (self.centerButton != nil) {
-        [self.view bringSubviewToFront:self.centerButton];
-    }
-}
 @end
