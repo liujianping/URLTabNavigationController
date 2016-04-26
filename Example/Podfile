@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'URLTabNavigationController_Example', :exclusive => true do
+  pod 'URLTabNavigationController', :path => '../'
+end
+
+target 'URLTabNavigationController_Tests', :exclusive => true do
+  pod 'URLTabNavigationController', :path => '../'
+
+  
+end
