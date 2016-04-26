@@ -1,15 +1,15 @@
 {
   "name": "URLTabNavigationController",
   "version": "0.1.0",
-  "summary": "A short description of URLTabNavigationController.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/URLTabNavigationController",
+  "summary": "SubClass of UITabBarController, support URLRouter and build tab view with UINavigationController directly.",
+  "description": "This CocoaPod provides the ability to url route view quickly.\nSubClass of UITabBarController, support URLRouter and build tab view with UINavigationController directly.",
+  "homepage": "https://github.com/liujianping/URLTabNavigationController",
   "license": "MIT",
   "authors": {
     "liujianping": "liujianping.itech@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/URLTabNavigationController.git",
+    "git": "https://github.com/liujianping/URLTabNavigationController.git",
     "tag": "0.1.0"
   },
   "platforms": {

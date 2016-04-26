@@ -7,12 +7,23 @@
 //
 
 #import "LJPAppDelegate.h"
+#import "URLTabNavigationController.h"
 
 @implementation LJPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    URLTabNavigationController* tabNavigation = [URLTabNavigationController defaultTabNavigationController];
+    [tabNavigation navigate:@"/red" title:@"red" image:nil selectedImage:nil className:@"RedViewController"];
+    [tabNavigation navigate:@"/blue" title:@"blue" image:nil selectedImage:nil className:@"BlueViewController"];
+    [tabNavigation navigate:@"/yellow" title:@"yellow" image:nil selectedImage:nil className:@"YellowViewController"];
+    [tabNavigation initialization];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = tabNavigation;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

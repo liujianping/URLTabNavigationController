@@ -6,7 +6,7 @@
 //  Copyright © 2016年 JamesLiu. All rights reserved.
 //
 
-#import "UIViewController+URLRouter.h"
+#import "UIViewController+Additions.h"
 #import <objc/runtime.h>
 
 @implementation UIViewController (URLRouter)

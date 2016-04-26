@@ -10,7 +10,7 @@
 #import "NSURL+QueryDictionary.h"
 #import <objc/runtime.h>
 
-#import "UIViewController+URLRouter.h"
+#import "UIViewController+Additions.h"
 
 @interface URLRouter ()
 //! object property router routes map

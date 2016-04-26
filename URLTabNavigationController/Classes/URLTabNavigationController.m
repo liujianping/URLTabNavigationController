@@ -6,20 +6,20 @@
 //  Copyright © 2016年 JamesLiu. All rights reserved.
 //
 
-#import "UITabNavigationViewController.h"
+#import "URLTabNavigationController.h"
 
 
 @implementation NavigationModel
 @end
 
-@interface UITabNavigationViewController ()
+@interface URLTabNavigationController ()
 
 @end
 
-@implementation UITabNavigationViewController
+@implementation URLTabNavigationController
 
 + (instancetype) defaultTabNavigationController{
-    static UITabNavigationViewController *tabNavigationController = nil;
+    static URLTabNavigationController *tabNavigationController = nil;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
