@@ -1,0 +1,14 @@
+PODS:
+  - URLTabNavigationController (0.1.0)
+
+DEPENDENCIES:
+  - URLTabNavigationController (from `../`)
+
+EXTERNAL SOURCES:
+  URLTabNavigationController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  URLTabNavigationController: b0525cb4ee530182d3f2a8930856ea8606d33976
+
+COCOAPODS: 0.39.0

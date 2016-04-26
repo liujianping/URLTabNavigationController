@@ -1,0 +1,6 @@
+framework module URLTabNavigationController {
+  umbrella header "URLTabNavigationController-umbrella.h"
+
+  export *
+  module * { export * }
+}
