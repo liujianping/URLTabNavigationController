@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                        SubClass of UITabBarController, support URLRouter and build tab view with UINavigationController directly.
+                       This CocoaPod provides the ability to url route view quickly.
+                       SubClass of UITabBarController, support URLRouter and build tab view with UINavigationController directly.
                        DESC
 
   s.homepage         = "https://github.com/liujianping/URLTabNavigationController"
