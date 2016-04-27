@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "URLTabNavigationController"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "SubClass of UITabBarController, support URLRouter and build tab view with UINavigationController directly."
 
 # This description is used to generate tags and improve search results.
